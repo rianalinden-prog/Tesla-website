@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Enthusiast Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --tesla-red: #e82127;
+            --tesla-dark: #171a20;
+            --tesla-light: #f4f4f4;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(23, 26, 32, 0.7), rgba(23, 26, 32, 0.7)), url('https://picsum.photos/seed/tesla-road/1920/1080.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            color: var(--tesla-dark) !important;
+        }
+        
+        .btn-tesla {
+            background-color: var(--tesla-dark);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .btn-tesla:hover {
+            background-color: #333;
+            color: white;
+        }
+        
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .footer {
+            background-color: var(--tesla-dark);
+            color: white;
+            padding: 40px 0;
+        }
+        
+        .model-card {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .model-card img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .stats-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .stats-card i {
+            font-size: 2rem;
+            color: var(--tesla-red);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">EV Enthusiast Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#models">Models</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">The Future of Electric Vehicles</h1>
+            <p class="lead mb-4">Discover everything about innovative electric vehicles and sustainable transportation</p>
+            <button class="btn btn-tesla btn-lg">Explore Models</button>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section id="models" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Popular Electric Vehicle Models</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="model-card card h-100">
+                        <img src="https://picsum.photos/seed/ev-model-s/400/300.jpg" alt="Electric Sedan">
+                        <h3>Electric Sedan</h3>
+                        <p>High-performance sedan with exceptional range and cutting-edge technology</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-speedometer2"></i> 0-60 mph in 3.1s</li>
+                            <li><i class="bi bi-battery-charging"></i> 405 miles range</li>
+                            <li><i class="bi bi-lightning"></i> Supercharging capable</li>
+                        </ul>
+                        <button class="btn btn-tesla">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="model-card card h-100">
+                        <img src="https://picsum.photos/seed/ev-model-3/400/300.jpg" alt="Electric Compact">
+                        <h3>Electric Compact</h3>
+                        <p>Accessible electric vehicle with impressive performance and efficiency</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-speedometer2"></i> 0-60 mph in 3.5s</li>
+                            <li><i class="bi bi-battery-charging"></i> 358 miles range</li>
+                            <li><i class="bi bi-lightning"></i> Supercharging capable</li>
+                        </ul>
+                        <button class="btn btn-tesla">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="model-card card h-100">
+                        <img src="https://picsum.photos/seed/ev-model-y/400/300.jpg" alt="Electric SUV">
+                        <h3>Electric SUV</h3>
+                        <p>Family-friendly electric SUV with versatility, space and performance</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-speedometer2"></i> 0-60 mph in 3.5s</li>
+                            <li><i class="bi bi-battery-charging"></i> 330 miles range</li>
+                            <li><i class="bi bi-lightning"></i> Supercharging capable</li>
+                        </ul>
+                        <button class="btn btn-tesla">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Key Features</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <i class="bi bi-cpu"></i>
+                        <h4>Autopilot</h4>
+                        <p>Advanced driver assistance system</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <i class="bi bi-wifi"></i>
+                        <h4>Connectivity</h4>
+                        <p>Always connected with regular updates</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <i class="bi bi-shield-check"></i>
+                        <h4>Safety</h4>
+                        <p>Highest safety ratings in every category</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <i class="bi bi-battery-full"></i>
+                        <h4>Efficiency</h4>
+                        <p>Industry-leading energy efficiency</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Latest EV News</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://picsum.photos/seed/ev-news-1/
